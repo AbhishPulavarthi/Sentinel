@@ -1,58 +1,81 @@
 # Sentinel
 
-Sentinel is a Python-based digital forensics and file analysis toolkit created as a long-term learning project in cybersecurity and software engineering.
+Sentinel is a Python-based digital forensics and file analysis toolkit built as a long-term cybersecurity learning project.
 
-The goal of this project is to gradually build a practical toolkit that helps inspect files, analyze metadata, verify file integrity, and explore concepts used in digital forensics.
+The goal of this project is to gradually develop a practical toolkit for inspecting files, verifying file integrity, extracting metadata, and exploring concepts used in digital forensics and cybersecurity.
 
-## Current Features (v0.1)
+Each version introduces new features while following good software engineering practices such as version control, documentation, and clean code organization.
 
-- File selection using a graphical file picker (Tkinter)
-- Displays the selected file's:
+---
+
+## Current Features (v0.2)
+
+- Graphical file selection using Tkinter
+- Displays:
   - File name
   - File extension
   - File name without extension
-  - File size in Bytes, KB, and MB
-- Handles file selection cancellation safely
+  - File size (Bytes, KB, MB)
+- Generates cryptographic hashes:
+  - SHA-256
+  - MD5
+- Handles file selection cancellation gracefully
+
+---
 
 ## Technologies Used
 
 - Python 3
-- Tkinter
 - pathlib
-- Git
-- GitHub
+- tkinter
+- hashlib
+
+---
 
 ## Project Structure
 
 ```
 Sentinel/
-│── main.py
-│── README.md
-│── .gitignore
+├── main.py
+├── README.md
+└── .gitignore
 ```
 
-## Future Roadmap
+---
 
-Planned features include:
+## Version History
 
-- File hash generation (MD5, SHA-256)
-- Metadata extraction
-- File type detection
-- Directory scanning
-- Report generation
-- Basic forensic utilities
-- Logging system
-- Modular project structure
+### v0.1
+- Added graphical file picker
+- Displayed file information
+- Displayed file size
 
-This project will continue to evolve through incremental version releases.
+### v0.2
+- Added SHA-256 hashing
+- Added MD5 hashing
+- Improved console output
+- Added project documentation
 
-## Version
+---
 
-Current Version: **v0.1**
+## Future Plans
+
+- Extract file metadata
+- Analyze file timestamps
+- Scan directories
+- Support additional hashing algorithms
+- Compare files using hashes
+- Generate forensic reports
+- Improve the user interface
+
+---
 
 ## Author
 
 **Abhish Pulavarthi**
 
 Computer Science Engineering (Cybersecurity)
-Learning by building real-world projects.
+
+---
+
+> Sentinel is an actively developed project, and new features will be added through incremental version updates.
