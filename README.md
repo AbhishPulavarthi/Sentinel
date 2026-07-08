@@ -1,14 +1,8 @@
 # Sentinel
 
-Sentinel is a Python-based digital forensics and file analysis toolkit built as a long-term cybersecurity learning project.
+Sentinel is a Python-based digital forensics and file analysis toolkit developed as part of my cybersecurity learning journey.
 
-The goal of this project is to gradually develop a practical toolkit for inspecting files, verifying file integrity, extracting metadata, and exploring concepts used in digital forensics and cybersecurity.
-
-Each version introduces new features while following good software engineering practices such as version control, documentation, and clean code organization.
-
----
-
-## Current Features (v0.2)
+## Features (v0.3)
 
 - Graphical file selection using Tkinter
 - Displays:
@@ -16,66 +10,30 @@ Each version introduces new features while following good software engineering p
   - File extension
   - File name without extension
   - File size (Bytes, KB, MB)
-- Generates cryptographic hashes:
-  - SHA-256
-  - MD5
-- Handles file selection cancellation gracefully
+  - Creation time
+  - Last modified time
+  - Last accessed time
+- Generates SHA-256 and MD5 hashes for file integrity verification
+- Uses `pathlib` for file handling
+- Uses `with open()` for safe file operations
 
----
+## Technologies
 
-## Technologies Used
-
-- Python 3
+- Python
+- Tkinter
 - pathlib
-- tkinter
 - hashlib
+- datetime
 
----
+## Planned Features
 
-## Project Structure
+- File signature (magic number) detection
+- File type verification
+- Metadata extraction
+- Directory scanning
+- Duplicate file detection
+- File integrity comparison
 
-```
-Sentinel/
-├── main.py
-├── README.md
-└── .gitignore
-```
+## Purpose
 
----
-
-## Version History
-
-### v0.1
-- Added graphical file picker
-- Displayed file information
-- Displayed file size
-
-### v0.2
-- Added SHA-256 hashing
-- Added MD5 hashing
-- Improved console output
-- Added project documentation
-
----
-
-## Future Plans
-
-- Extract file metadata
-- Analyze file timestamps
-- Scan directories
-- Support additional hashing algorithms
-- Compare files using hashes
-- Generate forensic reports
-- Improve the user interface
-
----
-
-## Author
-
-**Abhish Pulavarthi**
-
-Computer Science Engineering (Cybersecurity)
-
----
-
-> Sentinel is an actively developed project, and new features will be added through incremental version updates.
+The purpose of Sentinel is to strengthen my Python programming and cybersecurity skills by building a practical digital forensics toolkit one version at a time.
